@@ -1,0 +1,92 @@
+# **User Stories for UK Transport Usage Tool**
+
+## **Traffic Editors**
+
+### **1. Data Visualization**
+**As a Traffic Editor, I want to visualize transport data using interactive graphs, so that I can identify trends and patterns easily.**
+
+- **Acceptance Criteria:**
+  - Line, bar, and heatmap visualization options.
+  - Filters for date range and transport type.
+  - Ability to export visualizations as images or reports.
+
+### **2. Data Filtering**
+**As a Traffic Editor, I want to filter transport data by time period, so that I can focus on specific trends.**
+
+- **Acceptance Criteria:**
+  - Date range selection with custom and preset options.
+  - Real-time updates when filters are applied.
+
+### **3. Report Generation**
+**As a Traffic Editor, I want to generate reports on transport usage trends, so that I can share insights with stakeholders.**
+
+- **Acceptance Criteria:**
+  - Customizable report format (PDF only).
+  - Automatic data summarization with key insights.
+  - Option to include visualizations in the report.
+
+### **4. Anomaly Alerts**
+**As a Traffic Editor, I want to receive alerts on anomalies in transport usage patterns, so that I can investigate potential issues.**
+
+- **Acceptance Criteria:**
+  - System detects and flags significant deviations from expected trends.
+  - Notification system via email or dashboard alerts.
+
+### **5. Data Export**
+**As a Traffic Editor, I want to export processed data for further analysis, so that I can use it with other analytical tools.**
+
+- **Acceptance Criteria:**
+  - Export options in CSV format only.
+  - Ability to select specific data subsets for export.
+  - Confirmation message upon successful export.
+
+### **6. Historical Data Access**
+**As a Traffic Editor, I want to view historical data archives, so that I can reference past trends for better decision-making.**
+
+- **Acceptance Criteria:**
+  - Access to archived transport data from previous years.
+  - Search and filter functionality for historical data.
+  - Clear indication of archived data sources and last updates.
+
+---
+
+## **System Administrators**
+
+### **7. System Log Access**
+**As a System Administrator, I want to access system logs, so that I can review system activity and troubleshoot issues.**
+
+- **Acceptance Criteria:**
+  - Access to error and activity logs.
+  - Ability to filter and search logs for troubleshooting.
+
+---
+
+## **Developers**
+
+### **8. API Access**
+**As a Developer, I want to access an API for transport data, so that I can integrate it with other applications.**
+
+- **Acceptance Criteria:**
+  - Well-documented API endpoints.
+  - Secure authentication mechanisms.
+  - Support for querying transport data.
+
+---
+
+## **QA Engineers**
+
+### **9. End-to-End Testing**
+**As a QA Engineer, I want to perform end-to-end testing of the application's workflow, so that the user experience is seamless and bug-free.**
+
+- **Acceptance Criteria:**
+  - Test cases cover data input, preprocessing, model prediction, frontend display, error handling, and edge cases.
+  - Automated and manual testing strategies.
+  - Reporting and tracking of discovered issues.
+
+### **10. Model Validation**
+**As a QA Engineer, I want to validate the model’s predictions against test cases, so that the application delivers accurate transport predictions.**
+
+- **Acceptance Criteria:**
+  - Test dataset with expected outcomes for comparison.
+  - Automated and manual validation of model outputs.
+  - Reporting discrepancies between expected and actual predictions.

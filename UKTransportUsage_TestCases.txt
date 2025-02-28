@@ -1,0 +1,142 @@
+# **Test Cases for UK Transport Usage Tool**
+
+## **Traffic Editors**
+
+### **1. Data Visualization**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify that line, bar, and heatmap visualizations can be generated according to the user story’s acceptance criteria.
+   - **Steps:**
+     1. Navigate to the data visualization section.
+     2. Select different visualization types (line, bar, heatmap).
+     3. Apply filters for date range and transport type.
+     4. Verify that the selected visualization is displayed correctly across different datasets.
+     5. Interact with the visualization to ensure responsiveness.
+     6. Test rendering across various screen sizes and device types.
+     7. Export the visualization as an image or report.
+   - **Expected Result:** The system correctly renders the selected visualization, applies filters, responds to interactions, adapts to different screen sizes, and allows export.
+
+2. **Failure Case:**
+   - **Test:** Verify system behavior when invalid data is provided.
+   - **Steps:**
+     1. Upload an empty dataset.
+     2. Attempt to generate a visualization.
+   - **Expected Result:** The system displays an error message indicating the dataset is empty.
+
+### **2. Data Filtering**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify that data filtering updates results in real-time according to the acceptance criteria.
+   - **Steps:**
+     1. Select a date range (custom or preset options).
+     2. Apply filter.
+   - **Expected Result:** Data updates immediately based on the selected range.
+
+2. **Edge Case:**
+   - **Test:** Apply an invalid date range (e.g., start date after end date).
+   - **Expected Result:** The system prevents selection and displays an error message.
+
+### **3. Report Generation**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify that reports can be generated in PDF format with visualizations and key insights.
+   - **Steps:**
+     1. Select a dataset.
+     2. Choose to include visualizations.
+     3. Generate a report.
+   - **Expected Result:** The system generates a correctly formatted PDF report with selected visualizations and data summaries.
+
+2. **Failure Case:**
+   - **Test:** Attempt to generate a report without selecting a dataset.
+   - **Expected Result:** The system displays an error message preventing report generation.
+
+### **4. Anomaly Alerts**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify the system detects and flags anomalies correctly and sends notifications.
+   - **Steps:**
+     1. Input an anomalous dataset.
+     2. Check if the system flags anomalies.
+     3. Verify notifications are sent via email or dashboard alert.
+     4. Test for false positives and false negatives in anomaly detection.
+   - **Expected Result:** Anomalies are detected, false positives and negatives are minimized, and notifications are sent as specified in the acceptance criteria.
+
+2. **Failure Case:**
+   - **Test:** Verify notification delivery failure scenario.
+   - **Expected Result:** The system logs notification failures and provides retry options.
+
+### **5. Data Export**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify data export functionality according to acceptance criteria.
+   - **Expected Result:** Data exports successfully in CSV format with a confirmation message.
+
+2. **Failure Case:**
+   - **Test:** Attempt to export data when no dataset is selected.
+   - **Expected Result:** The system displays an error message.
+
+### **6. Historical Data Access**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify historical data accessibility according to user story criteria.
+   - **Expected Result:** Archived data is retrieved and displayed correctly, with search and filter options.
+
+2. **Edge Case:**
+   - **Test:** Search for a non-existent data entry.
+   - **Expected Result:** The system displays a message indicating no records found.
+
+---
+
+## **System Administrators**
+
+### **7. System Log Access**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify log filtering functionality as per acceptance criteria.
+   - **Expected Result:** Logs can be searched and filtered correctly.
+
+2. **Failure Case:**
+   - **Test:** Attempt to access logs without permission.
+   - **Expected Result:** The system denies access and logs the unauthorized attempt.
+
+---
+
+## **Developers**
+
+### **8. API Access**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify API authentication with documented secure mechanisms.
+   - **Expected Result:** API access is granted with valid credentials.
+
+2. **Failure Case:**
+   - **Test:** Attempt access with invalid credentials.
+   - **Expected Result:** The system denies access and logs the attempt.
+
+---
+
+## **QA Engineers**
+
+### **9. End-to-End Testing**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Verify end-to-end system workflow as per acceptance criteria.
+   - **Expected Result:** Data flows correctly from input to final output, covering all workflow components.
+
+2. **Edge Case:**
+   - **Test:** Input incomplete data.
+   - **Expected Result:** The system handles errors gracefully.
+
+### **10. Model Validation**
+#### **Test Cases:**
+1. **Success Case:**
+   - **Test:** Validate model predictions against test cases using an expected test dataset.
+   - **Expected Result:** Predictions match expected outcomes as per acceptance criteria.
+
+2. **Failure Case:**
+   - **Test:** Input unexpected data.
+   - **Expected Result:** The system flags potential inaccuracies and logs discrepancies.
+
+---
+This covers the **Generate** step. Let me know if any refinements are needed before moving to validation.
+
